@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+
+    <style>
+        .input-wrapper {
+            display: flex;
+        }
+        label {
+            margin-right: 15px;
+        }
+        #runFizzBuzz {
+            margin-top: 10px;
+        }
+        hr {
+            margin: 30px 0;
+        }
+        .default-value {
+            font-size: 12px;
+            color: grey;
+            margin-left: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FizzBuzz</h1>
+
+    <div class="fizz-wrapper">
+        <div class="input-wrapper">
+            <label for="total">Enter Total</label>
+            <input type="number" name="total" id="total" value="">
+           <div>
+            <span>If no number is entered, the default value will be: </span>
+            <span class="default-value"></span>
+           </div>
+        </div>
+        <button onclick="fizzBuzz()" id="runFizzBuzz">Run FizzBuzz</button>
+
+    </div>
+
+    <hr>
+
+    <div class="statistics">
+        <div class="fizz-count">
+            <strong>Fizz Count is: </strong>
+            <span></span>
+        </div>
+        <div class="buzz-count">
+            <strong>Buzz Count is: </strong>
+            <span></span>
+        </div>
+        <div class="fizzbuzz-count">
+            <strong>FizzBuzz Count is: </strong>
+            <span></span>
+        </div>
+    </div>
+</body>
+<script src="./fizzBuzz.js"></script>
+</html>
